@@ -3,7 +3,6 @@ html, body {
   padding: 0;
   font-family: sans-serif;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 100;
   background-color: #222;
   color: #eee;
@@ -24,4 +23,84 @@ html .content span, body .content span {
 }
 html .content .random, body .content .random {
   padding-top: 9px;
+}
+
+.portfolio {
+  background-color: whitesmoke;
+  color: #131313;
+}
+
+figure {
+  text-align: center;
+  height: 200px;
+}
+
+figure a {
+  opacity: 0.9;
+}
+
+figure a:hover {
+  opacity: 1;
+}
+
+figcaption a {
+  color: black;
+}
+
+.Grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+  padding-top: 40px;
+}
+
+@media  (max-width: 599px) {
+  .Grid {
+    justify-content: space-around;
+  }
+}
+
+@media  (min-width: 600px) {
+  .Grid {
+    max-width: 600px;
+  }
+}
+
+@media  (min-width: 900px) {
+  .Grid {
+    max-width: 900px;
+  }
+}
+
+@media  (min-width: 1200px) {
+  .Grid {
+    max-width: 1200px;
+  }
+}
+
+.Grid-cell {
+  width: 200px;
+  height: 230px;
+  margin: 10px 10px 10px 10px;
+}
+
+figure, img {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+}
+
+img {
+  max-width: 280px;
+  max-height: 280px;
+}
+
+figcaption {
+  padding-top: 1em;
+  margin-top: 1em;
+  font-size: 12px;
+  border-top: 1px solid black;
 }
